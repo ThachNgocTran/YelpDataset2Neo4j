@@ -10,7 +10,13 @@ Yelp Dataset is imported into Neo4j Graph Database.
   + yelp_academic_dataset_tip.json: 251.2 MB => **ignored**.
   + yelp_academic_dataset_user.json: 3 GB
 
-Note: the 3 files should be put into `.\data` folder of the Jupyter Notebook.
+**Note**: the 3 files should be put into `.\data` folder of the Jupyter Notebook.
+
++ Some statistics:
+   + Number of nodes: **10201067**
+   + Number of relationships: **26645898**
+
+Those statistics can be fetched via cypher `CALL apoc.meta.stats()`. They can be cross-checked by counting the numbers of lines in, e.g. `relationships.csv`, `business_nodes.csv`. See the Notebook for further info on such files.
 
 ## Intention
 
@@ -32,6 +38,7 @@ From Neo4j's Browser, with command `CALL db.schema()`.
 + Anaconda3-2020.02 x64.
 + Neo4j v3.5.17.
 + Yelp Dataset (03.05.2020). MD5: `7610af013edf610706021697190dab15`.
++ The Neo4j's Database should be a Windows Service. The Neo4j Desktop and Neo4j Python Driver (`py2neo`) connect to it through url `bolt://localhost:7687` with username/password as `neo4j`/`12345`.
 + On Windows, users need sufficient privileges to start/stop Services. A UAC dialog may appear, asking for permission.
 + Additional 3rd party Python libraries: `neo4j-driver`, `py2neo`, `regex`, `reverse_geocoder`.
 
