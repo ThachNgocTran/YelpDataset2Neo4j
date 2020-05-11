@@ -1,5 +1,5 @@
 # YelpDataset2Neo4j
-Yelp Dataset is imported into Neo4j Graph Database.
+Yelp Dataset is imported into Neo4j Graph Database. My blog article: https://medium.com/@thachngoctran/exploring-yelp-dataset-with-neo4j-part-i-from-raw-data-to-nodes-and-relationships-with-python-21f52dd408ef
 
 ## Raw Data
 
@@ -37,9 +37,9 @@ From Neo4j's Browser, with command `CALL db.schema()`.
 + Windows 8.1 x64.
 + Anaconda3-2020.02 x64.
 + Neo4j v3.5.17.
-+ Yelp Dataset (03.05.2020). MD5: `7610af013edf610706021697190dab15`.
++ Yelp Dataset (03.05.2020). MD5 (yelp_dataset.tar): `7610af013edf610706021697190dab15`.
 + The Neo4j's Database should be a Windows Service. The Neo4j Desktop and Neo4j Python Driver (`py2neo`) connect to it through url `bolt://localhost:7687` with username/password as `neo4j`/`12345`.
-+ On Windows, users need sufficient privileges to start/stop Services. A UAC dialog may appear, asking for permission.
++ On Windows, users need sufficient privileges to start/stop/install Services. A UAC dialog may appear, asking for permission.
 + Additional 3rd party Python libraries: `neo4j-driver`, `py2neo`, `regex`, `reverse_geocoder`.
 
 ## License
