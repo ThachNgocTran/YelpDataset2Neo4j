@@ -35,12 +35,12 @@ From Neo4j's Browser, with command `CALL db.schema()`.
 ## Development Environment
 
 + Windows 8.1 x64.
-+ Anaconda3-2020.02 x64.
-+ Neo4j v3.5.17.
++ Anaconda3-2020.02 x64 (Python v3.7.6).
++ Neo4j v3.5.17, with `dbms.memory.heap.max_size` 4GB.
 + Yelp Dataset (03.05.2020). MD5 (yelp_dataset.tar): `7610af013edf610706021697190dab15`.
 + The Neo4j's Database should be a Windows Service. The Neo4j Desktop and Neo4j Python Driver (`py2neo`) connect to it through url `bolt://localhost:7687` with username/password as `neo4j`/`12345`.
 + On Windows, users need sufficient privileges to start/stop/install Services. A UAC dialog may appear, asking for permission.
-+ Additional 3rd party Python libraries: `neo4j-driver`, `py2neo`, `regex`, `reverse_geocoder`.
++ Additional 3rd party Python libraries: `neo4j-driver`, `py2neo` (v4.3.0), `regex`, `reverse_geocoder`.
 
 ## License
 
