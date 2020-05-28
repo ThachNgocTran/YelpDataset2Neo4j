@@ -28,7 +28,7 @@ The code of transforming raw data into necessary files, then importing into Neo4
 
 After the data ends up as a graph in Neo4j, some Graph Algorithms will be tried out.
 
-Note: Since Neo4j v4.0,, it is advised that **Graph Data Science Library** be used, rather than **Graph Algorithms library**.
+*Note*: Since Neo4j v4.0, it is advised that **Graph Data Science Library** be used, rather than **Graph Algorithms library**.
 
 ## Graph Schema
 
